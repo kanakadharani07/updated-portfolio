@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanakadharani K | Full Stack Developer Portfolio</title>
+    <meta name="description"
+        content="Kanakadharani K - Full Stack Developer building modern web applications with passion." />
+
+    <!-- Google Fonts — Space Grotesk + Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet" />
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Spotlight Cursor -->
+    <div class="spotlight" id="spotlight"></div>
+
+    <!-- Scroll Progress -->
+    <div class="progress-track">
+        <div class="progress-fill" id="progress-fill"></div>
+    </div>
+
+    <!-- Animated Background Blobs -->
+    <div class="aurora-bg">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- ═══════════════════ NAVIGATION ═══════════════════ -->
+    <header class="glass-nav" id="glass-nav">
+        <div class="nav-inner">
+            <a href="#hero" class="logo">Kanakadharani K</a>
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#hero" class="nav-item active" data-section="hero">Home</a>
+                <a href="#about" class="nav-item" data-section="about">About</a>
+                <a href="#experience" class="nav-item" data-section="experience">Experience</a>
+                <a href="#skills" class="nav-item" data-section="skills">Skills</a>
+                <a href="#projects" class="nav-item" data-section="projects">Projects</a>
+                <a href="#languages" class="nav-item" data-section="languages">Languages</a>
+                <a href="#achievements" class="nav-item" data-section="achievements">Achievements</a>
+                <a href="#contact" class="nav-item" data-section="contact">Contact</a>
+            </nav>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ═══════════════════ HERO ═══════════════════ -->
+    <section id="hero" class="hero-split">
+        <div class="hero-left">
+            <div class="status-pill anim-fade" style="--delay:0.2s">
+                <span class="pulse-dot"></span> Available for work
+            </div>
+
+            <h1 class="hero-heading anim-fade" style="--delay:0.4s">
+                Hi, I'm<br>
+                <span class="name-gradient">Kanakadharani Kathiresan</span>
+            </h1>
+
+            <div class="role-carousel anim-fade" style="--delay:0.6s">
+                <span class="role-label">I'm a</span>
+                <div class="role-slider">
+                    <div class="role-track" id="role-track">
+                        <span>Full Stack Developer</span>
+                        <span>Problem Solver</span>
+                        <span>AI Developer</span>
+                        <span>Software Developer</span>
+                    </div>
+                </div>
+            </div>
+
+            <p class="hero-desc anim-fade" style="--delay:0.8s">
+                I am a passionate Full Stack Developer who enjoys building modern web applications, solving real-world
+                problems, and continuously learning new technologies.
+            </p>
+
+            <div class="hero-actions anim-fade" style="--delay:1s">
+                <a href="#projects" class="btn-warm">
+                    <i class='bx bx-rocket'></i> View Projects
+                </a>
+                <a href="assets/Kanakadharani_Resume.pdf" download class="btn-outline-warm">
+                    <i class='bx bx-download'></i> Download Resume
+                </a>
+                <a href="#contact" class="btn-outline-warm">
+                    <i class='bx bx-chat'></i> Let's Talk
+                </a>
+            </div>
+
+            <div class="hero-social anim-fade" style="--delay:1.2s">
+                <a href="https://www.linkedin.com/in/kanakadharani-kathiresan-a81215360" target="_blank"
+                    aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/kanakadharani07" target="_blank" aria-label="GitHub"><i
+                        class='bx bxl-github'></i></a>
+                <a href="mailto:kanakadharani12@gmail.com" aria-label="Email"><i class='bx bx-envelope'></i></a>
+                <a href="https://leetcode.com/u/kanakadharani/" target="_blank" aria-label="LeetCode"><i class='bx bx-code-alt'></i></a>
+            </div>
+        </div>
+
+        <div class="hero-right anim-fade" style="--delay:0.6s">
+            <div class="abstract-shape">
+                <div class="shape-ring ring-1"></div>
+                <div class="shape-ring ring-2"></div>
+                <div class="shape-ring ring-3"></div>
+                <div class="shape-core shape-core-photo">
+                    <img src="assets/newpic.jpeg" alt="Kanakadharani K" class="hero-photo" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ ABOUT ═══════════════════ -->
+    <section id="about" class="section">
+        <div class="section-label scroll-reveal">
+            <!-- <span class="label-num">01</span> -->
+            <span class="label-text">About Me</span>
+            <span class="label-line"></span>
+        </div>
+
+        <div class="about-layout about-layout--full scroll-reveal">
+            <div class="about-body">
+                <h2 class="about-title">Building reliable software with <span class="text-warm">real-world impact</span>
+                </h2>
+                <p>
+                    I'm a Full Stack Developer pursuing B.Tech in Computer Science and Engineering, with hands-on
+                    experience across the MERN stack, Java, and AI-integrated development. My work spans enterprise
+                    tools, IoT-driven systems, and freelance client platforms — each one built end-to-end, from
+                    database architecture to deployment.
+                </p>
+                <p>
+                    I care about writing clean, maintainable code and shipping applications that actually solve
+                    problems — whether that's automating a support workflow, tracking a college bus fleet in real
+                    time, or generating an AI-powered learning roadmap. I'm always learning the next tool that helps
+                    me build faster and better.
+                </p>
+
+                <div class="about-chips">
+                    <div class="chip"><i class='bx bx-code-block'></i> Clean Code</div>
+                    <div class="chip"><i class='bx bx-rocket'></i> Modern Tech</div>
+                    <div class="chip"><i class='bx bx-bulb'></i> Problem Solver</div>
+                    <div class="chip"><i class='bx bx-heart'></i> Team Player</div>
+                    <div class="chip"><i class='bx bx-brain'></i> AI Integration</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ EXPERIENCE ═══════════════════ -->
+    <section id="experience" class="section">
+        <div class="section-label scroll-reveal">
+            <!-- <span class="label-num">02</span> -->
+            <span class="label-text">Experience</span>
+            <span class="label-line"></span>
+        </div>
+
+        <div class="experience-layout experience-layout--unified scroll-reveal">
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-card-head">
+                            <div class="company-logo-wrap">
+                                <img src="assets/certificates/vdart-logo.png" alt="VDart Academy Logo" onerror="this.style.display='none'; this.parentElement.classList.add('logo-fallback');" />
+                                <i class='bx bx-buildings logo-fallback-icon'></i>
+                            </div>
+                            <div>
+                                <span class="timeline-duration"><i class='bx bx-calendar'></i> Feb 2026 – May 2026</span>
+                                <h3>Full Stack Development Intern</h3>
+                                <h4><i class='bx bx-building-house'></i> VDart Academy</h4>
+                            </div>
+                        </div>
+
+                        <div class="timeline-block">
+                            <h5><i class='bx bx-list-check'></i> About the Training</h5>
+                            <ul class="timeline-points">
+                                <li>Completed an Academic Internship (On-the-Job Training) in Full Stack
+                                    Development at VDart Academy as part of the B.Tech CSE curriculum at
+                                    Dhanalakshmi Srinivasan University, Trichy.</li>
+                                <li>Received mentorship from industry professionals and collaborated closely with
+                                    peers on real-world, full stack development tasks.</li>
+                                <li>Applied core web development concepts across the stack, strengthening
+                                    end-to-end build and deployment skills.</li>
+                            </ul>
+                        </div>
+
+                        <div class="timeline-block">
+                            <h5><i class='bx bx-trophy'></i> Achievements</h5>
+                            <ul class="timeline-points">
+                                <li>Showcased a strong skill set and consistent drive to learn, exceeding
+                                    expectations throughout the training period.</li>
+                                <li>Successfully completed the full stack OJT program within the expected
+                                    timeframe, earning a Certificate of On-the-Job Training from VDart Academy.</li>
+                            </ul>
+                        </div>
+
+                        <div class="timeline-tech">
+                            <span><i class='bx bxl-java'></i> Java</span>
+                            <span><i class='bx bx-layer'></i> MERN Stack</span>
+                            <span><i class='bx bxl-git'></i> Git</span>
+                            <span><i class='bx bx-plug'></i> REST APIs</span>
+                        </div>
+
+                        <div class="timeline-cert-block">
+                            <h5><i class='bx bx-certification'></i> Internship Certificate</h5>
+                            <div class="cert-preview-img">
+                                <img src="assets/certificates/internship-cert.jpg" alt="VDart Academy Internship Certificate" />
+                            </div>
+                            <div class="cert-preview-actions">
+                                <a href="assets/certificates/internship-cert.pdf" target="_blank" class="btn-outline-warm">
+                                    <i class='bx bx-show'></i> View PDF
+                                </a>
+                                <a href="assets/certificates/internship-cert.pdf" download class="btn-warm">
+                                    <i class='bx bx-download'></i> Download PDF
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ SKILLS ═══════════════════ -->
+    <section id="skills" class="section">
+        <div class="section-label scroll-reveal">
+            <!-- <span class="label-num">03</span> -->
+            <span class="label-text">My Skills</span>
+            <span class="label-line"></span>
+        </div>
+
+        <!-- Frontend -->
+        <div class="skill-block scroll-reveal">
+            <h3 class="skill-block-title"><i class='bx bx-code-alt'></i> Frontend</h3>
+            <div class="skill-orbit-grid">
+                <div class="orbit-card"><div class="orbit-icon"><i class='bx bxl-html5'></i></div><h4>HTML5</h4></div>
+                <div class="orbit-card"><div class="orbit-icon"><i class='bx bxl-css3'></i></div><h4>CSS3</h4></div>
+                <div class="orbit-card"><div class="orbit-icon"><i class='bx bxl-javascript'></i></div><h4>JavaScript</h4></div>
+                <div class="orbit-card"><div class="orbit-icon"><i class='bx bxl-react'></i></div><h4>React.js</h4></div>
+            </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="skill-block scroll-reveal">
+            <h3 class="skill-block-title"><i class='bx bx-server'></i> Backend</h3>
+            <div class="skill-orbit-grid">
+                <div class="orbit-card"><div class="orbit-icon"><i class='bx bxl-nodejs'></i></div><h4>Node.js</h4></div>
+                <div class="orbit-card"><div class="orbit-icon"><i class='bx bx-server'></i></div><h4>Express.js</h4></div>
+            </div>
+        </div>
+
+        <!-- Database -->
+        <div class="skill-block scroll-reveal">
+            <h3 class="skill-block-title"><i class='bx bx-data'></i> Database</h3>
+            <div class="skill-orbit-grid">
+                <div class="orbit-card"><div class="orbit-icon"><i class='bx bxl-mongodb'></i></div><h4>MongoDB</h4></div>
+                <div class="orbit-card"><div class="orbit-icon"><i class='bx bx-data'></i></div><h4>MySQL</h4></div>
+            </div>
+        </div>
+
+        <!-- Programming -->
+        <div class="skill-block scroll-reveal">
+            <h3 class="skill-block-title"><i class='bx bx-terminal'></i> Programming</h3>
+            <div class="skill-orbit-grid">
+                <div class="orbit-card"><div class="orbit-icon"><i class='bx bxl-java'></i></div><h4>Java</h4></div>
+                <div class="orbit-card"><div class="orbit-icon"><i class='bx bxl-python'></i></div><h4>Python (Basics)</h4></div>
+            </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-block scroll-reveal">
+            <h3 class="skill-block-title"><i class='bx bx-wrench'></i> Tools</h3>
+            <div class="skill-orbit-grid">
+                <div class="orbit-card"><div class="orbit-icon"><i class='bx bxl-git'></i></div><h4>Git</h4></div>
+                <div class="orbit-card"><div class="orbit-icon"><i class='bx bxl-github'></i></div><h4>GitHub</h4></div>
+                <div class="orbit-card"><div class="orbit-icon"><i class='bx bxl-visual-studio'></i></div><h4>VS Code</h4></div>
+                <div class="orbit-card"><div class="orbit-icon"><i class='bx bx-send'></i></div><h4>Postman</h4></div>
+                <div class="orbit-card"><div class="orbit-icon"><i class='bx bx-pen'></i></div><h4>Canva</h4></div>
+            </div>
+        </div>
+
+        <!-- Core Computer Science -->
+        <div class="skill-block scroll-reveal">
+            <h3 class="skill-block-title"><i class='bx bx-chip'></i> Core Computer Science</h3>
+            <div class="pro-skills-flex">
+                <div class="pro-chip"><i class='bx bx-git-branch'></i> Data Structures & Algorithms</div>
+                <div class="pro-chip"><i class='bx bx-cube'></i> Object-Oriented Programming</div>
+                <div class="pro-chip"><i class='bx bx-devices'></i> Operating Systems</div>
+                <div class="pro-chip"><i class='bx bx-plug'></i> REST APIs</div>
+                <div class="pro-chip"><i class='bx bx-lock-alt'></i> Authentication</div>
+                <div class="pro-chip"><i class='bx bx-refresh'></i> CRUD Operations</div>
+                <div class="pro-chip"><i class='bx bx-mobile-alt'></i> Responsive Web Design</div>
+                <div class="pro-chip"><i class='bx bx-brain'></i> AI Integration</div>
+            </div>
+        </div>
+
+        <!-- Professional Experience -->
+        <div class="skill-block scroll-reveal">
+            <h3 class="skill-block-title"><i class='bx bx-briefcase'></i> Professional Experience</h3>
+            <div class="pro-skills-flex">
+                <div class="pro-chip"><i class='bx bx-laptop'></i> Freelance Project Development</div>
+                <div class="pro-chip"><i class='bx bx-task'></i> Project Management</div>
+                <div class="pro-chip"><i class='bx bx-group'></i> Teamwork & Collaboration</div>
+                <div class="pro-chip"><i class='bx bx-crown'></i> Leadership</div>
+                <div class="pro-chip"><i class='bx bx-bulb'></i> Problem Solving</div>
+                <div class="pro-chip"><i class='bx bx-chat'></i> Communication</div>
+                <div class="pro-chip"><i class='bx bx-time-five'></i> Time Management</div>
+                <div class="pro-chip"><i class='bx bx-brain'></i> Critical Thinking</div>
+                <div class="pro-chip"><i class='bx bx-shape-triangle'></i> Adaptability</div>
+                <div class="pro-chip"><i class='bx bx-support'></i> Client Communication</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ PROJECTS ═══════════════════ -->
+    <section id="projects" class="section">
+        <div class="section-label scroll-reveal">
+            <!-- <span class="label-num">04</span> -->
+            <span class="label-text">Featured Projects</span>
+            <span class="label-line"></span>
+        </div>
+
+        <div class="projects-masonry scroll-reveal">
+            <!-- Project 1 -->
+            <div class="pj-card">
+                <div class="pj-img-wrap">
+                    <!-- Replace with a screenshot of this project -->
+                    <img src="assets/images/smartbus-img.jpeg" alt="Bus Management System screenshot" />
+                </div>
+                <!-- <div class="pj-overlay">
+                    <div class="pj-number">01</div>
+                </div> -->
+                <div class="pj-body">
+                    <h3>Bus Management System</h3>
+                    <p>Designed and developed a Smart College Bus Management System integrating RFID-based
+                        authentication to ensure only fee-paid and authorized students access transportation facilities.
+                        Implemented real-time GPS tracking to monitor bus locations, improving route efficiency, student
+                        safety, and transparency for college management. Integrated a vibration-based accident detection
+                        system that triggers instant alerts to authorities, enabling faster emergency response. Enhanced
+                        operational efficiency by combining IoT sensors and automation, reducing financial leakage and
+                        improving overall transport management reliability.</p>
+                    <div class="pj-tags">
+                        <span>Java</span><span>MySQL</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>RFID</span><span>IoT</span><span>GPS</span>
+                    </div>
+                    <div class="pj-actions">
+                        <!-- Replace with your GitHub repository link -->
+                        <a href="https://github.com/kanakadharani07/bus-management.git" target="_blank" class="pj-link pj-link-secondary"><i class='bx bxl-github'></i> GitHub</a>
+                        <a href="https://smart-bus-s6yl.onrender.com" target="_blank" class="pj-link">Live Demo <i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="pj-card">
+                <div class="pj-img-wrap">
+                    <!-- Replace with a screenshot of this project -->
+                    <img src="assets/images/aari.png" alt="Aari Design & Beauty Services website screenshot" />
+                </div>
+                <!-- <div class="pj-overlay">
+                    <div class="pj-number">02</div>
+                </div> -->
+                <div class="pj-body">
+                    <h3>Business Website (Aari Design & Beauty Services)</h3>
+                    <p>Developed and deployed a full-stack responsive business website using HTML, CSS, JavaScript,
+                        Node.js, Express.js, and MongoDB to deliver a seamless cross-device user experience. Led the
+                        end-to-end development lifecycle, including requirement analysis, UI/UX design, backend
+                        development, and cloud deployment for a freelance client. Built and integrated a customer
+                        enquiry management system, enabling efficient handling of user queries and improving client
+                        engagement. Optimized website performance, scalability, and reliability through structured
+                        backend architecture and database management.</p>
+                    <div class="pj-tags">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span>
+                    </div>
+                    <div class="pj-actions">
+                        <!-- Replace with your GitHub repository link -->
+                        <a href="https://github.com/kanakadharani07/freelance-project.git" target="_blank" class="pj-link pj-link-secondary"><i class='bx bxl-github'></i> GitHub</a>
+                        <a href="https://www.srisaifashion.shop/" target="_blank" class="pj-link">Live Demo <i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="pj-card">
+                <div class="pj-img-wrap">
+                    <!-- Replace with a screenshot of this project -->
+                    <img src="assets/images/vdesk-img.png" alt="VDesk ticket booking system screenshot" />
+                </div>
+                <!-- <div class="pj-overlay">
+                    <div class="pj-number">03</div>
+                </div> -->
+                <div class="pj-body">
+                    <h3>VDesk – Ticket Booking System (Internal Project)</h3>
+                    <p>
+                        Developed an enterprise-level ticket management system for employees to create, track, and
+                        resolve support tickets efficiently. Integrated the Gmail API to automate email notifications
+                        throughout the ticket lifecycle, including ticket creation, updates, and resolution. Implemented
+                        workflow automation to streamline internal support processes, improving organizational
+                        productivity, communication, and issue resolution efficiency. Built a scalable full-stack
+                        application using the MERN stack with a structured backend architecture and responsive user
+                        interface.
+                    </p>
+                    <div class="pj-tags">
+                        <span>MongoDB</span>
+                        <span>Express.js</span>
+                        <span>React.js</span>
+                        <span>Node.js</span>
+                        <span>Gmail API</span>
+                    </div>
+                    <!-- <div class="pj-actions"> -->
+                        <!-- Replace with your GitHub repository link -->
+                        <!-- <a href="https://github.com/kanakadharani07/vdesk" target="_blank" class="pj-link pj-link-secondary"><i class='bx bxl-github'></i> GitHub</a>
+                    </div> -->
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="pj-card">
+                <div class="pj-img-wrap">
+                    <!-- Replace with a screenshot of this project -->
+                    <img src="assets/images/analytics.jpg" alt="Sales Analytics Dashboard screenshot" />
+                </div>
+                <!-- <div class="pj-overlay">
+                    <div class="pj-number">04</div>
+                </div> -->
+                <div class="pj-body">
+                    <h3>Sales Analytics Dashboard (Zoho Creator)</h3>
+                    <p>Developed a Sales Analytics Dashboard using Zoho Creator Low-code platform, enabling efficient business data
+                        management and visualization. Designed interactive dashboards and dynamic reports to track KPIs,
+                        sales trends, and performance metrics in real-time. Automated data processing workflows to
+                        generate actionable insights, improving decision-making and business strategy. Enhanced
+                        usability by implementing intuitive UI components and data visualization techniques, increasing
+                        user engagement and reporting efficiency.</p>
+                    <div class="pj-tags">
+                        <span>Zoho Creator</span><span>Low-Code</span><span>Data Viz</span><span>KPIs</span>
+                    </div>
+                    <div class="pj-actions">
+                        <!-- Replace with your GitHub repository link -->
+                        <!-- <a href="https://github.com/kanakadharani07/sales-dashboard" target="_blank" class="pj-link pj-link-secondary"><i class='bx bxl-github'></i> GitHub</a> -->
+                        <a href="https://analytics.zoho.in/open-view/517939000000015264" target="_blank" class="pj-link">Live Demo <i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Extra projects revealed on "Show More" -->
+        <div class="projects-masonry projects-extra" id="projects-extra">
+            <!-- Project 5 -->
+            <div class="pj-card">
+                <div class="pj-img-wrap">
+                    <!-- Replace with a screenshot of this project -->
+                    <img src="assets/images/roadmap.jpg" alt="AI Roadmap Builder screenshot" />
+                </div>
+                <!-- <div class="pj-overlay">
+                    <div class="pj-number">05</div>
+                </div> -->
+                <div class="pj-body">
+                    <h3>AI Roadmap Builder</h3>
+                    <p>
+                        Developed an AI-powered learning roadmap generator that creates personalized skill development paths based on users' goals and interests. Integrated AI/ML algorithms to recommend optimized learning sequences, curated resources, and structured career roadmaps. Built a responsive full-stack application with REST API integration, enabling users to plan, monitor, and track their professional learning journey efficiently through an interactive interface.
+                    </p>
+                    <div class="pj-tags">
+                        <span>React.js</span>
+                        <span>Node.js</span>
+                        <span>AI/ML</span>
+                        <span>REST APIs</span>
+                    </div>
+                    <div class="pj-actions">
+                        <!-- Replace with your GitHub repository link -->
+                        <a href="https://github.com/kanakadharani07/Ai-roadmap.git" target="_blank" class="pj-link pj-link-secondary"><i class='bx bxl-github'></i> GitHub</a>
+                        <a href="https://ai-roadmap-generator-8ay9.onrender.com/" target="_blank" class="pj-link">
+                            Live Demo <i class='bx bx-link-external'></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="pj-card">
+                <div class="pj-img-wrap">
+                    <!-- Replace with a screenshot of this project -->
+                    <img src="assets/images/flower.jpg" alt="FlowerCart e-commerce platform screenshot" />
+                </div>
+                <!-- <div class="pj-overlay">
+                    <div class="pj-number">06</div>
+                </div> -->
+                <div class="pj-body">
+                    <h3>FlowerCart – E-Commerce Platform</h3>
+                    <p>
+                        Developed a full-stack flower e-commerce platform featuring dedicated customer and admin interfaces for seamless online shopping and store management. Built a secure admin dashboard with role-based authorization to manage products, orders, customers, and inventory efficiently. Implemented a fully responsive user interface to ensure an optimized shopping experience across desktops, tablets, and mobile devices using the MERN stack.
+                    </p>
+                    <div class="pj-tags">
+                        <span>MongoDB</span>
+                        <span>Express.js</span>
+                        <span>React.js</span>
+                        <span>Node.js</span>
+                        <span>Responsive Design</span>
+                    </div>
+                    <div class="pj-actions">
+                        <!-- Replace with your GitHub repository link -->
+                        <a href="https://github.com/kanakadharani07/flowers-shop-ut-.git" target="_blank" class="pj-link pj-link-secondary"><i class='bx bxl-github'></i> GitHub</a>
+                        <!-- Replace with your live demo link -->
+                        <a href="https://project-demo.vercel.app" target="_blank" class="pj-link">Live Demo <i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects-toggle-wrap">
+            <button type="button" class="btn-outline-warm" id="projects-toggle">
+                <span>Show More Projects</span> <i class='bx bx-chevron-down'></i>
+            </button>
+        </div>
+
+    </section>
+
+    <!-- ═══════════════════ LANGUAGES ═══════════════════ -->
+    <section id="languages" class="section">
+        <div class="section-label scroll-reveal">
+            <!-- <span class="label-num">05</span> -->
+            <span class="label-text">Languages</span>
+            <span class="label-line"></span>
+        </div>
+
+        <div class="languages-grid scroll-reveal">
+            <div class="lang-card">
+                <div class="lang-icon"><i class='bx bx-message-square-dots'></i></div>
+                <h4>Tamil</h4>
+                <span class="lang-level">Native</span>
+            </div>
+            <div class="lang-card">
+                <div class="lang-icon"><i class='bx bx-message-square-dots'></i></div>
+                <h4>English</h4>
+                <span class="lang-level">Professional Working Proficiency</span>
+            </div>
+            <div class="lang-card">
+                <div class="lang-icon"><i class='bx bx-message-square-dots'></i></div>
+                <h4>Hindi</h4>
+                <span class="lang-level">Certified</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ ACHIEVEMENTS ═══════════════════ -->
+    <section id="achievements" class="section">
+        <div class="section-label scroll-reveal">
+            <!-- <span class="label-num">06</span> -->
+            <span class="label-text">Certifications & Achievements</span>
+            <span class="label-line"></span>
+        </div>
+
+        <div class="achievements-grid scroll-reveal">
+            <div class="ach-card">
+                <div class="ach-icon-wrap"><i class='bx bxl-c-plus-plus'></i></div>
+                <div class="ach-img-wrap">
+                    <!-- Replace with your LeetCode 50 Days badge image -->
+                    <img src="assets/images/badge.png" alt="LeetCode 50 Days Badge" />
+                </div>
+                <h4>LeetCode 50 Days Badge</h4>
+                <p>Completed the 50 Days LeetCode Challenge, demonstrating consistency in solving Data Structures
+                    and Algorithms problems while improving analytical thinking and coding skills.</p>
+                <a href="assets/images/badge.png" target="_blank" class="cert-link"><i
+                        class='bx bx-link-external'></i> View Badge</a>
+            </div>
+            <div class="ach-card">
+                <div class="ach-icon-wrap"><i class='bx bx-medal'></i></div>
+                <div class="ach-img-wrap"><img src="assets/certificates/zoho-img.jpeg"
+                        alt="Zoho Low-Code Young Creator Certificate" /></div>
+                <h4>Zoho Low-Code Young Creator</h4>
+                <p>Certified for completing the training on building applications using Zoho's low-code development
+                    platform.</p>
+                <a href="assets/certificates/zoho-cert.jpeg" target="_blank" class="cert-link"><i
+                        class='bx bx-link-external'></i> View Certificate</a>
+            </div>
+            <div class="ach-card">
+                <div class="ach-icon-wrap"><i class='bx bx-palette'></i></div>
+                <div class="ach-img-wrap"><img src="assets/images/ui.png" alt="UI/UX Design Certificate" /></div>
+                <h4>UI/UX Design — Coursera</h4>
+                <p>Focused on user interface design, user experience principles, and design thinking.</p>
+                <a href="assets/certificates/coursera.pdf" target="_blank" class="cert-link"><i
+                        class='bx bx-link-external'></i> View Certificate</a>
+            </div>
+            <div class="ach-card">
+                <div class="ach-icon-wrap"><i class='bx bxl-java'></i></div>
+                <div class="ach-img-wrap"><img src="assets/images/java.png" alt="Java Certificate" /></div>
+                <h4>Programming in Java — NPTEL</h4>
+                <p>Covered core Java programming concepts and application development.</p>
+                <a href="assets/certificates/java.pdf" target="_blank" class="cert-link"><i
+                        class='bx bx-link-external'></i> View Certificate</a>
+            </div>
+            <div class="ach-card">
+                <div class="ach-icon-wrap"><i class='bx bx-cloud'></i></div>
+                <div class="ach-img-wrap"><img src="assets/images/cloud.png" alt="Cloud Computing Certificate" /></div>
+                <h4>Cloud Computing — NPTEL</h4>
+                <p>Learned cloud computing fundamentals and services.</p>
+                <a href="assets/certificates/cloud.pdf" target="_blank" class="cert-link"><i
+                        class='bx bx-link-external'></i> View Certificate</a>
+            </div>
+            <div class="ach-card">
+                <div class="ach-icon-wrap"><i class='bx bxl-microsoft'></i></div>
+                <div class="ach-img-wrap"><img src="assets/images/microsoft.png" alt="Microsoft Learn Achievements" /></div>
+                <h4>Microsoft Learn Achievements</h4>
+                <p>Earned multiple learning badges and certificates through Microsoft Learn modules.</p>
+                <a href="assets/certificates/microsoft.pdf" target="_blank" class="cert-link"><i
+                        class='bx bx-link-external'></i> View Certificate</a>                    
+                     <br> <a href="https://learn.microsoft.com/en-gb/users/me/achievements#badges-section" target="_blank" class="cert-link"><i
+                        class='bx bx-link-external'></i> View Profile</a>
+            </div>
+            <div class="ach-card">
+                <div class="ach-icon-wrap"><i class='bx bx-bus'></i></div>
+                <div class="ach-img-wrap"><img src="assets/images/smartbus.jpeg"
+                        alt="Smart Bus Automation Certificate" /></div>
+                <h4>Smart Bus Automation Presentation</h4>
+                <p>Presented project at a Science & Technology Fest demonstrating innovative transportation tech.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ CONTACT ═══════════════════ -->
+    <section id="contact" class="section">
+        <div class="section-label scroll-reveal">
+            <!-- <span class="label-num">07</span> -->
+            <span class="label-text">Get In Touch</span>
+            <span class="label-line"></span>
+        </div>
+
+        <div class="contact-split scroll-reveal">
+            <div class="contact-left">
+                <h2>Let's build something <span class="text-warm">amazing</span> together.</h2>
+                <p>Feel free to reach out for collaborations, opportunities, or just to say hello!</p>
+
+                <div class="contact-details">
+                    <a href="mailto:kanakadharani12@gmail.com" class="detail-row">
+                        <div class="detail-icon"><i class='bx bx-envelope'></i></div>
+                        <div>
+                            <span class="detail-label">Email</span>
+                            <span class="detail-value">kanakadharani12@gmail.com</span>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/kanakadharani-kathiresan-a81215360" target="_blank" class="detail-row">
+                        <div class="detail-icon"><i class='bx bxl-linkedin'></i></div>
+                        <div>
+                            <span class="detail-label">LinkedIn</span>
+                            <span class="detail-value">Kanakadharani Kathiresan</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/kanakadharani07" target="_blank" class="detail-row">
+                        <div class="detail-icon"><i class='bx bxl-github'></i></div>
+                        <div>
+                            <span class="detail-label">GitHub</span>
+                            <span class="detail-value">kanakadharani07</span>
+                        </div>
+                    </a>
+                    <a href="https://leetcode.com/u/kanakadharani/" target="_blank" class="detail-row">
+                        <div class="detail-icon"><i class='bx bx-code-alt'></i></div>
+                        <div>
+                            <span class="detail-label">LeetCode</span>
+                            <span class="detail-value">kanakadharani </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-right">
+                <form id="contact-form" class="glass-form">
+                    <div class="form-group">
+                        <input type="text" id="name" required placeholder=" " />
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required placeholder=" " />
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" required placeholder=" "></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn-warm btn-send">
+                        Send Message <i class='bx bx-send'></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ FOOTER ═══════════════════ -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <span class="footer-logo">Kanakadharani K</span>
+            <p>Designed & built with passion <i class='bx bxs-heart' style="color:var(--warm)"></i></p>
+            <p class="footer-copy">&copy; 2026 Kanakadharani K. All rights reserved.</p>
+        </div>
+        <a href="#hero" class="back-to-top" aria-label="Back to top"><i class='bx bx-chevron-up'></i></a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
